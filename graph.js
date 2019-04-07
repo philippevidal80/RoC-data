@@ -175,8 +175,8 @@ function loadGraph(data, strength, distance, radius) {
               d.group
             }</span><br>Versatility (# of pairs): ${d.weight}`;
 
-            table_primary = `<table border=0><tr><td valign='top'><table id='tooltipTablePrimary' border=1>`;
-            table_secondary = `<td valign='top'><table id='tooltipTableSecondary' border=1>`;
+            table_primary = `<table border=0><tr border=0><td border=0 valign='top'><table id='tooltipTablePrimary' border=1>`;
+            table_secondary = `<td border=0 valign='top'><table id='tooltipTableSecondary' border=1>`;
 
             header = `<tr style="font-weight:bold">
             <td class='primary' width='45%'>Primary</td>
