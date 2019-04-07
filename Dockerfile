@@ -6,6 +6,6 @@ RUN apt-get update \
     && apt-get clean \
     && cd /var/www/html/ \
     && rm -rf index.html \
-    && git clone https://github.com/sho-87/RoC-data.git .
+    && git clone https://github.com/philippevidal80/RoC-data.git?ref=add-images .
 EXPOSE 80
 CMD ["apache2ctl", "-D", "FOREGROUND"]

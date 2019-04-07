@@ -171,7 +171,7 @@ function loadGraph(data, strength, distance, radius) {
           .attr('fill', d => color(d.group))
           .on('mouseover.tooltip', function(d) {
             // Generate tooltip text
-            info = `<strong>${d.id}</strong><br/><span class=${d.group}>${
+            info = `<img src='${d.image}' alt='${d.id}' /><br/><strong>${d.id}</strong><br/><span class=${d.group}>${
               d.group
             }</span><br>Versatility (# of pairs): ${d.weight}`;
 
