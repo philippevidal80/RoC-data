@@ -175,7 +175,7 @@ function loadGraph(data, strength, distance, radius) {
               d.group
             }</span><br>Versatility (# of pairs): ${d.weight}`;
 
-            table_primary = `<tr><td><table id='tooltipTablePrimary' border=1>`;
+            table_primary = `<table><tr><td><table id='tooltipTablePrimary' border=1>`;
             table_secondary = `<table id='tooltipTableSecondary' border=1>`;
 
             header = `<tr style="font-weight:bold">
@@ -204,7 +204,7 @@ function loadGraph(data, strength, distance, radius) {
             });
 
             table_primary += header + rows_primary + '</table></td>';
-            table_secondary += header + rows_secondary + '</table></td></tr>';
+            table_secondary += header + rows_secondary + '</table></td></tr></table>';
 
             tables_combined = '';
             if (rows_primary !== '') {

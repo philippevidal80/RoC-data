@@ -15,6 +15,7 @@ body {
 }
 
 svg {
+  float: left;
   display: block;
   margin: auto;
   border: 1px solid black;
