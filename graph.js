@@ -208,7 +208,7 @@ function loadGraph(data, strength, distance, radius) {
 
             tables_combined = '';
             if (rows_primary !== '') {
-              tables_combined += table_primary + '</td>';
+              tables_combined += table_primary;
             }
 
             if (rows_secondary !== '') {
