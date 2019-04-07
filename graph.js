@@ -192,7 +192,7 @@ function loadGraph(data, strength, distance, radius) {
                 rank_sum += Number(pair.rank);
                 rows_primary += `<tr><td style='font-weight:bold'>${
                   pair.source.id
-                }</td><td>${pair.target.id}<img align='right' src='${d.image}' alt='${d.id}' width='29' /></td><td>${pair.rank}</td></tr>`;
+                }</td><td>${pair.target.id}<img align='right' src='${pair.target.image}' alt='${pair.target.id}' width='29' /></td><td>${pair.rank}</td></tr>`;
               } else if (d.id === pair.target.id) {
                 rank_sum += Number(pair.rank);
                 rows_secondary += `<tr><td>${
