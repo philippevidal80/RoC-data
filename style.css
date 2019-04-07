@@ -2,9 +2,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.column {
+.columnsmall {
   float: left;
-  width: 50%;
+  width: 30%;
+}
+
+.columnlarge {
+  float: left;
+  width: 70%;
 }
 
 /* Clear floats after the columns */
