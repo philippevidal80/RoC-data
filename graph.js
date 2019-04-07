@@ -175,8 +175,8 @@ function loadGraph(data, strength, distance, radius) {
               d.group
             }</span><br>Versatility (# of pairs): ${d.weight}`;
 
-            table_primary = `<p><table id='tooltipTablePrimary' border=1>`;
-            table_secondary = `<p><table id='tooltipTableSecondary' border=1>`;
+            table_primary = `<tr><td><table id='tooltipTablePrimary' border=1>`;
+            table_secondary = `<table id='tooltipTableSecondary' border=1>`;
 
             header = `<tr style="font-weight:bold">
             <td class='primary' width='45%'>Primary</td>
@@ -203,16 +203,16 @@ function loadGraph(data, strength, distance, radius) {
               }
             });
 
-            table_primary += header + rows_primary + '</table>';
-            table_secondary += header + rows_secondary + '</table>';
+            table_primary += header + rows_primary + '</table></td>';
+            table_secondary += header + rows_secondary + '</table></td></tr>';
 
             tables_combined = '';
             if (rows_primary !== '') {
-              tables_combined += table_primary;
+              tables_combined += table_primary + '</td>';
             }
 
             if (rows_secondary !== '') {
-              tables_combined += table_secondary;
+              tables_combined += '<td>' + table_secondary;
             }
 
             tooltip
